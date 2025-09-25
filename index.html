@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="FDS — Federação da Diversão Secreta: landing page do RPG de comédia" />
+    <title>FDS — Federação da Diversão Secreta</title>
+    <link rel="icon" type="image/svg+xml" href="" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="container hero hero--split">
+        <div class="hero__text">
+          <span class="badge">RPG de comédia — onde até a falha crítica arranca risada (e sim, o site todo é em Comic Sans)</span>
+          <h1>FDS — Federação da Diversão Secreta</h1>
+          <p class="lead">
+            O RPG onde até a piada ruim vira arma. Use trocadilhos, improviso e tortas na cara para salvar o humor do mundo.
+          </p>
+          <div class="cta">
+            <a href="#financiamento" class="btn btn--primary">Quero cair na piada</a>
+            <a href="#como-jogar" class="btn btn--ghost">Me explique o sistema</a>
+          </div>
+          <div class="subscribe">
+            <form id="form-hero" class="subscribe__row"
+                  action="https://script.google.com/macros/s/AKfycby6uMN6jDM4Hzr9qXFrqR58S4XPvYEKksjYyft-LvPee5nWww0g7my1eOyJhK3Wd8VkuA/exec"
+                  method="GET"
+                  target="hidden_iframe"
+                  onsubmit="testarEnvio(event)">
+              <input type="email" id="email-hero" name="email" placeholder="Digite seu e-mail" required />
+              <button type="submit" class="btn btn--primary" data-loading-text="Enviando...">Quero entrar!</button>
+            </form>
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+            <div class="subscribe__feedback"></div>
+          </div>
+
+          <!-- Popup (inicialmente escondido) -->
+          <div id="popup-whatsapp" class="popup hidden">
+            <div class="popup__content">
+              <h3>Inscrição feita com sucesso! 🎉</h3>
+              <p>Entre no grupo do WhatsApp para receber as novidades:</p>
+              <a href="https://chat.whatsapp.com/JRQnD1nuHLJIkLkH2QfkIJ" target="_blank" class="btn btn--indigo">
+                Entrar no grupo do WhatsApp
+              </a>
+              <button id="popup-close" class="btn btn--ghost">Fechar</button>
+            </div>
+          </div>
+
+        </div>
+        <div class="hero__cover">
+          <div class="cover-card">
+            <img src="images/F.D.S.jpg" alt="Capa FDS" />
+          </div>
+        </div>
+      </header>
+
+      <main class="container">
+        <section id="sobre" class="grid grid--2">
+          <div>
+            <h2>Resumo do rolê</h2>
+            <p>
+              FDS é um sistema de RPG de comédia. O mundo vive sob o domínio de um governo que distribui “remédios para foco”.
+              Resultado: ninguém mais ri. A resistência é formada pelos Humoristas, heróis da zoeira que enfrentam os Lobos da Faria Lima usando
+              piadas, improviso e itens mais estranhos que um frango de borracha num cofre.
+            </p>
+            <div class="features grid grid--2 gap">
+              <div class="card card--pad">
+                <h3>Regras rápidas</h3>
+                <p>Aprenda em minutos. O difícil é parar de rir.</p>
+              </div>
+              <div class="card card--pad">
+                <h3>Para qualquer grupo</h3>
+                <p>Funciona no one-shot de sábado ou na campanha que dura mais que piada do tiozão.</p>
+              </div>
+              <div class="card card--pad wide">
+                <h3>Itens hilários</h3>
+                <p>Frango de borracha, tortas de creme, microfones amaldiçoados... e por aí vai.</p>
+              </div>
+            </div>
+          </div>
+          <aside class="aside">
+          <h4>Classes</h4>
+          <ul>
+            <li><strong>Improvisador</strong> — Sempre tem uma saída... nem que seja ruim.</li>
+            <li><strong>Musicalista</strong> — Nada melhor que uma música de 10 minutos para uma campanha.</li>
+            <li><strong>Stand Up</strong> — Precisa de 5 minutos, mas rende 2 horas.</li>
+            <li><strong>Palhaço</strong> — Resolve tudo com buzina e torta na cara.</li>
+            <li><strong>Trocadilhador</strong> — Luta com armas de duplo sentido.</li>
+            <li><strong>Tio do Pavê</strong> — Inimigo natural de qualquer jantar.</li>
+          </ul>
+        </aside>
+        </section>
+
+        <section id="como-jogar" class="section-gap">
+          <h2>Como jogar (sem perder o timing)</h2>
+          <div class="grid grid--3 gap">
+            <div class="card card--pad">
+              <h5>Material</h5>
+              <p>Mestre, jogadores, dados D6 e zero vergonha na cara.</p>
+            </div>
+            <div class="card card--pad">
+              <h5>Mecânicas</h5>
+              <p>
+                Atributos simples (Força, Inteligência, Carisma, Destreza, Manipulação).  
+                Vida e PoDeP (Poder de Piada) para equilibrar cenas e besteiras.
+              </p>
+            </div>
+            <div class="card card--pad">
+              <h5>Progressão</h5>
+              <p>
+                Ganhe títulos cômicos e habilidades lendárias conforme seu grupo cria as histórias mais vergonhosamente engraçadas da mesa.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section id="destaques" class="section-gap">
+          <h2>Destaques (ou piadas internas que só fazem sentido jogando)</h2>
+          <div class="grid grid--3 gap">
+            <div class="card card--pad center">
+              <h4>Itens Bizarros</h4>
+              <p>De frangos de borracha a microfones que amaldiçoam até a dignidade.</p>
+            </div>
+            <div class="card card--pad center">
+              <h4>Inimigos</h4>
+              <p>Os Lobos da Faria Lima: engravatados que acreditam que KPI é mais engraçado que meme.</p>
+            </div>
+            <div class="card card--pad center">
+              <h4>Modo Cooperativo</h4>
+              <p>Improviso coletivo para transformar qualquer sessão em show de stand up improvisado.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="financiamento" class="section-gap banner">
+          <div class="grid grid--2 gap center-v">
+            <div>
+              <h2>Financiamento coletivo</h2>
+              <p>
+                Pretendemos lançar uma campanha na Meeple Starter.  
+                As recompensas? PDFs, cópias físicas com capa especial, pacotes de mestre e versões limitadas.  
+              </p>
+              <ul class="list">
+                <li>PDF imediato para apoiadores digitais</li>
+                <li>Cópia física com capa dura limitada</li>
+                <li>Metas extras com ilustrações e piadas inéditas</li>
+              </ul>
+            </div>
+            <div>
+              <div class="card card--pad center">
+                <h4>Quer ser avisado?</h4>
+                <a href="https://chat.whatsapp.com/JRQnD1nuHLJIkLkH2QfkIJ" target="_blank" class="btn btn--indigo">
+                  Entrar no grupo do WhatsApp
+                </a>
+              </div>
+          </div>
+        </section>
+
+        <section id="faq" class="section-gap">
+          <h2>Perguntas frequentes (porque todo mundo sempre pergunta)</h2>
+          <div class="stack">
+            <div class="card card--pad">
+              <strong>Posso jogar sozinho?</strong>
+              <p>Infelizmente não: RPG solo aqui é só você rindo das próprias piadas no espelho.  
+  Recomendamos no mínimo 3 pessoas (contando o mestre) — até porque rir sozinho é estranho, mas rir em grupo é contagioso.</p>
+            </div>
+            <div class="card card--pad">
+              <strong>Onde será financiado?</strong>
+              <p>O sistema será financiado na Meeple Starter, uma empresa nacional de financiamento coletivo focado em RPG de mesa e Boardgames
+                (onde deixo bimestralmente uma parte do meu suado dinheiro).</p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container footer__inner">
+          <div>
+            <p class="brand">FDS — Federação da Diversão Secreta</p>
+            <p class="muted">Feito com riso, improviso e umas três piadas ruins a mais. Direitos reservados.</p>
+          </div>
+          <nav class="footer__nav">
+            <a href="#" class="link">Contato</a>
+            <a href="#" class="link">Créditos</a>
+          </nav>
+        </div>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <script>
+      function enviarFormularioTradicional(event) {
+        const form = event.target;
+        const email = form.email.value;
+        const button = form.querySelector('button[type="submit"]');
+        const feedback = document.querySelector('.subscribe__feedback');
+        
+        console.log('Formulário enviado com email:', email);
+        console.log('URL de destino:', form.action);
+        
+        // Validar email
+        if (!email || email.trim() === '') {
+          event.preventDefault();
+          feedback.textContent = 'Por favor, digite um email válido.';
+          feedback.style.color = '#dc2626';
+          return false;
+        }
+        
+        // Mostrar loading
+        const originalText = button.textContent;
+        button.textContent = button.dataset.loadingText || 'Enviando...';
+        button.disabled = true;
+        
+        // Limpar feedback anterior
+        feedback.textContent = '';
+        
+        // Aguardar um pouco e mostrar popup (o formulário será enviado automaticamente)
+        setTimeout(() => {
+          console.log('Mostrando popup após envio');
+          abrirPopup();
+          button.textContent = originalText;
+          button.disabled = false;
+        }, 1500); // Aumentei o tempo para dar tempo do envio
+        
+        // Deixar o formulário ser enviado normalmente
+        return true;
+      }
+      
+      function enviarFormularioSimples(event) {
+        const form = event.target;
+        const email = form.email.value;
+        const button = form.querySelector('button[type="submit"]');
+        const feedback = document.querySelector('.subscribe__feedback');
+        
+        // Mostrar loading
+        const originalText = button.textContent;
+        button.textContent = button.dataset.loadingText || 'Enviando...';
+        button.disabled = true;
+        
+        // Aguardar um pouco e mostrar popup (método mais simples)
+        setTimeout(() => {
+          abrirPopup();
+          button.textContent = originalText;
+          button.disabled = false;
+        }, 1000);
+      }
+      
+      // Função alternativa para debug
+      async function enviarFormularioDebug(event) {
+        event.preventDefault();
+        
+        const form = event.target;
+        const email = form.email.value;
+        const button = form.querySelector('button[type="submit"]');
+        const feedback = document.querySelector('.subscribe__feedback');
+        
+        // Mostrar loading
+        const originalText = button.textContent;
+        button.textContent = button.dataset.loadingText || 'Enviando...';
+        button.disabled = true;
+        
+        try {
+          // Enviar como form data
+          const formData = new FormData();
+          formData.append('email', email);
+          
+          const response = await fetch(form.action, {
+            method: 'POST',
+            body: formData
+          });
+          
+          console.log('Resposta do servidor:', response);
+          
+          // Mostrar popup independente da resposta
+          abrirPopup();
+          
+        } catch (error) {
+          console.error('Erro ao enviar:', error);
+          feedback.textContent = 'Erro ao enviar. Tente novamente.';
+          feedback.style.color = '#dc2626';
+        } finally {
+          button.textContent = originalText;
+          button.disabled = false;
+        }
+      }
+      
+      async function enviarFormulario(event) {
+        event.preventDefault();
+        
+        const form = event.target;
+        const email = form.email.value;
+        const button = form.querySelector('button[type="submit"]');
+        const feedback = document.querySelector('.subscribe__feedback');
+        
+        // Mostrar loading
+        const originalText = button.textContent;
+        button.textContent = button.dataset.loadingText || 'Enviando...';
+        button.disabled = true;
+        
+        try {
+          const response = await fetch(form.action, {
+            method: 'POST',
+            mode: 'no-cors', // Necessário para Google Apps Script
+            headers: {
+              'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: `email=${encodeURIComponent(email)}`
+          });
+          
+          // Como mode: 'no-cors' não permite ler a resposta, assumimos sucesso
+          // e mostramos o popup
+          abrirPopup();
+          
+        } catch (error) {
+          console.error('Erro ao enviar:', error);
+          feedback.textContent = 'Erro ao enviar. Tente novamente.';
+          feedback.style.color = '#dc2626';
+        } finally {
+          button.textContent = originalText;
+          button.disabled = false;
+        }
+      }
+      
+      function abrirPopup() {
+        const popup = document.getElementById("popup-whatsapp");
+        if (popup) {
+          popup.classList.remove("hidden");
+        }
+        
+        document.getElementById("form-hero").reset();
+        const feedback = document.querySelector('.subscribe__feedback');
+        feedback.textContent = '';
+      }
+      
+      function testarEnvio(event) {
+        const form = event.target;
+        const email = form.email.value;
+        
+        // Validar email
+        if (!email || email.trim() === '') {
+          event.preventDefault();
+          const feedback = document.querySelector('.subscribe__feedback');
+          feedback.textContent = 'Por favor, digite um email válido.';
+          feedback.style.color = '#dc2626';
+          return false;
+        }
+        
+        // Mostrar loading
+        const button = form.querySelector('button[type="submit"]');
+        const originalText = button.textContent;
+        button.textContent = button.dataset.loadingText || 'Enviando...';
+        button.disabled = true;
+        
+        // Limpar feedback anterior
+        const feedback = document.querySelector('.subscribe__feedback');
+        feedback.textContent = '';
+        
+        // Aguardar um pouco e mostrar popup
+        setTimeout(() => {
+          abrirPopup();
+          button.textContent = originalText;
+          button.disabled = false;
+        }, 1500);
+        
+        // Deixar o formulário ser enviado normalmente
+        return true;
+      }
+      
+      // Adicionar listener para o iframe após o DOM carregar
+      document.addEventListener('DOMContentLoaded', function() {
+        const iframe = document.querySelector('iframe[name="hidden_iframe"]');
+        if (iframe) {
+          iframe.addEventListener('load', function() {
+            // Resposta recebida do servidor
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
